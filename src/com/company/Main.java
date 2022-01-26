@@ -2,6 +2,7 @@ package com.company;
 
 import com.company.animals.Cat;
 import com.company.animals.Dog;
+import com.company.animals.Duck;
 
 public class Main {
 
@@ -32,6 +33,16 @@ public class Main {
         dog.goToStick(5);
         dog.whereTheDog();
 
+        dog.voice();
+
         Dog homelessDog = Dog.ofHomeless(100);
+        homelessDog.voice();
+
+        Duck duck = new Duck();
+        duck.voice();
+        duck.takeOff();
+        duck.isTheBirdFlying();
+        duck.landing();
+        duck.isTheBirdFlying();
     }
 }

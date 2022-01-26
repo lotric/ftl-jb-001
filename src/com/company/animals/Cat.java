@@ -16,7 +16,6 @@ public class Cat extends Animal{
         return 90;
     }
 
-
     public Integer jumpHeight(){
         if(this.weight == null) return 300;
 

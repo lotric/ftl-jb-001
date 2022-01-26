@@ -1,6 +1,5 @@
 package com.company;
 
-
 import com.company.animals.Cat;
 
 public class Main {

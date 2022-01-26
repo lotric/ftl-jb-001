@@ -11,8 +11,8 @@ public class Animal {
 
     public Animal() {
     }
-    
+
     public void voice(){
-        System.out.println("Voice");
+        System.out.println("Voice!");
     }
 }

@@ -1,5 +1,7 @@
 package com.company.L026;
 
+import com.company.L027.ThreadExample;
+
 import java.io.*;
 import java.net.URL;
 import java.net.URLConnection;
@@ -56,5 +58,7 @@ public class FileExample {
         writeFile("ya.txt", content);
 
         System.out.println(readFile("ya.txt"));
+
+        ThreadExample.run();
     }
 }

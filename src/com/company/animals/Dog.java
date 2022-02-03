@@ -12,12 +12,16 @@ public class Dog extends Animal{
         super(MoveType.WALK);
     }
 
-    public static List<Dog> randomArray(){
+    public static List<Dog> randomArray() throws Exception {
         List<Dog> dogs = new ArrayList<>();
 
-        dogs.add(Dog.of("Sharik", new AnimalWeight(3, AnimalWeight.WeightType.KG)));
-        dogs.add(Dog.of("Bobik", new AnimalWeight(1, AnimalWeight.WeightType.KG)));
-        dogs.add(Dog.of("Tuzic", new AnimalWeight(5, AnimalWeight.WeightType.KG)));
+        try {
+            dogs.add(Dog.of("Sharik", new AnimalWeight(-3, AnimalWeight.WeightType.KG)));
+            dogs.add(Dog.of("Bobik", new AnimalWeight(1, AnimalWeight.WeightType.KG)));
+            dogs.add(Dog.of("Tuzic", new AnimalWeight(5, AnimalWeight.WeightType.KG)));
+        }catch (WeightException e){
+            e.printStackTrace();
+        }
 
         return dogs;
     }

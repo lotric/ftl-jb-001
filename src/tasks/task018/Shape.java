@@ -1,14 +1,11 @@
 package tasks.task018;
 
-abstract class Shape {
+interface Shape extends Comparable<Shape>{
 
-    private double volume;
+    double getVolume();
 
-    public Shape(double volume) {
-        this.volume = volume;
-    }
-
-    public double getVolume(){
-        return volume;
+    @Override
+    default int compareTo(Shape other){
+        return Double.compare(getVolume(), other.getVolume());
     }
 }

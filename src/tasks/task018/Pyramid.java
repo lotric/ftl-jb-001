@@ -10,4 +10,13 @@ class Pyramid extends Shape{
         this.height = height;
         this.square = square;
     }
+
+    public Pyramid(double volume) {
+        super(volume);
+    }
+
+    @Override
+    public double getVolume() {
+        return super.getVolume();
+    }
 }

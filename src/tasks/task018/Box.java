@@ -21,4 +21,9 @@ class Box extends Shape{
             return false;
         }
     }
+
+    @Override
+    public double getVolume() {
+        return super.getVolume();
+    }
 }

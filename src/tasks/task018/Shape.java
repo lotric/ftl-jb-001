@@ -1,6 +1,6 @@
 package tasks.task018;
 
-class Shape {
+abstract class Shape {
 
     private double volume;
 

@@ -12,6 +12,9 @@ public class Main {
         }
 
         double x = start + (end - start) / 2;
+        if(x == end || x == start){
+            return x;
+        }
 
         if(func(start) * func(x) > 0){
             return solve(x, end);

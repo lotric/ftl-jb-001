@@ -12,4 +12,13 @@ public class SolidOfRevolution extends Shape{
     public double getRadius() {
         return radius;
     }
+
+    public SolidOfRevolution(double volume) {
+        super(volume);
+    }
+
+    @Override
+    public double getVolume() {
+        return super.getVolume();
+    }
 }
